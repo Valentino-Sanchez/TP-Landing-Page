@@ -110,8 +110,8 @@ return (
                 <Image
                 src="/assets/user1.png"
                 alt="Usuario"
-                width={56}
-                height={56}
+                width={70}
+                height={100}
                 className="review__avatar"
                 />
                 <p className="review__text">
@@ -123,8 +123,8 @@ return (
                 <Image
                 src="/assets/user2.png"
                 alt="Usuario"
-                width={56}
-                height={56}
+                width={70}
+                height={100}
                 className="review__avatar"
                 />
                 <p className="review__text">
@@ -136,8 +136,8 @@ return (
                 <Image
                 src="/assets/user3.png"
                 alt="Usuario"
-                width={56}
-                height={56}
+                width={70}
+                height={100}
                 className="review__avatar"
                 />
                 <p className="review__text">
