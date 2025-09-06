@@ -11,7 +11,8 @@ header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 20px 50px;
+padding: 10px 20px;
+padding-right: 300px;
 background: white;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 position: relative; /* 👈 ya no es fixed */
@@ -19,7 +20,8 @@ z-index: 1000;
 }
 
 header img {
-height: 40px;
+height: 100px;
+width: 300px;
 }
 
 /* Links header */
@@ -27,6 +29,7 @@ nav a {
 margin-left: 20px;
 text-decoration: none;
 font-weight: bold;
+font-size: larger;
 color: black;
 }
 
@@ -72,31 +75,46 @@ button:hover {
 background-color: #dce7ff;
 }
 
-/* Contacto */
-form {
-max-width: 600px;
-margin: auto;
-display: flex;
-flex-direction: column;
-gap: 15px;
+/* ====== Timer ====== */
+.timer { text-align: center; }
+.timer__title {
+font-family: "Bank Gothic", "Orbitron", system-ui, sans-serif;
+letter-spacing: 1px;
+color: #415a77;
+margin-bottom: 16px;
 }
+.timer__row {
+display: inline-flex;
+align-items: flex-end;
+gap: 12px;
+background: rgba(255,255,255,.6);
+padding: 14px 18px;
+border-radius: 12px;
+border: 1px solid rgba(0,0,0,.05);
+}
+.time { text-align: center; min-width: 70px; }
+.time__num { font-size: 36px; font-weight: 800; letter-spacing: 2px; color: #2a3240; }
+.time__label { font-size: 12px; color: #6b7a90; text-transform: uppercase; }
+.time__sep { font-weight: 800; font-size: 28px; color: #2a3240; opacity: .6; }
 
-input, textarea {
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 8px;
-font-size: 16px;
+/* ====== Beneficios ====== */
+.benefits h2 { text-align: center; margin: 0 0 28px; }
+.benefits__grid {
+display: grid;
+grid-template-columns: 1fr 420px;
+align-items: center;
+gap: 32px;
+max-width: 1100px;
+margin: 0 auto;
 }
+.benefits__text {
+font-size: clamp(16px, 2.2vw, 20px);
+max-width: 640px;
+margin: 0 auto;
+line-height: 1.5;
+}
+.benefits__image { justify-self: center; }
 
-textarea {
-min-height: 120px;
-resize: vertical;
-}
-
-button[type="submit"] {
-background: #cddfff;
-font-weight: bold;
-}
 
 /* ====== Clientes felices ====== */
 .happy { text-align: center; }
@@ -135,3 +153,29 @@ gap: 12px;
 }
 .review__avatar { border-radius: 999px; }
 .review__text { margin: 0; font-weight: 600; color: #0f2233; }
+
+/* Contacto */
+form {
+max-width: 600px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+input, textarea {
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 16px;
+}
+
+textarea {
+min-height: 120px;
+resize: vertical;
+}
+
+button[type="submit"] {
+background: #cddfff;
+font-weight: bold;
+}

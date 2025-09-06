@@ -5,7 +5,7 @@ return (
     <main>
       {/* HEADER */}
     <header>
-        <Image src="/assets/logo.png" alt="CV Analytics" width={150} height={40} />
+        <Image src="/assets/logo.png" alt="CV Analytics" width={150} height={60} />
         <nav>
         <a href="#">Lanzamiento</a>
         <a href="#">¿Qué ofrecemos?</a>
@@ -35,25 +35,56 @@ return (
         </h2>
     </section>
 
-      {/* TIMER */}
-    <section>
-        <h2>Apertura de la app</h2>
-        <div>
-        <span>14 DÍAS</span> : <span>26 HORAS</span> : <span>06 MINUTOS</span> : <span>11 SEGUNDOS</span>
+      {/* TIMER (estático) */}
+        <section className="section timer">
+        <h2 className="timer__title">Apertura de la app</h2>
+        <div className="timer__row">
+            <div className="time">
+            <div className="time__num">14</div>
+            <div className="time__label">Días</div>
+            </div>
+            <span className="time__sep">:</span>
+            <div className="time">
+            <div className="time__num">26</div>
+            <div className="time__label">Horas</div>
+            </div>
+            <span className="time__sep">:</span>
+            <div className="time">
+            <div className="time__num">06</div>
+            <div className="time__label">Minutos</div>
+            </div>
+            <span className="time__sep">:</span>
+            <div className="time">
+            <div className="time__num">11</div>
+            <div className="time__label">Segundos</div>
+            </div>
         </div>
-    </section>
+        </section>
 
-      {/* POR QUÉ ELEGIR */}
-    <section>
-        <h2>¿Por qué elegir <b>CV Analytics</b>?</h2>
-        <div className="hero">
-        <p>
-            A diferencia de otras herramientas, nuestro sistema no solo compara
-            tu CV, sino que lo optimiza para los trabajos más adecuados
-        </p>
-        <Image src="/assets/benefit.png" alt="Benefit" width={400} height={300} />
+        {/* BENEFICIOS / ¿POR QUÉ ELEGIR? */}
+        <section className="section benefits">
+        <h2>
+            ¿Por qué elegir <span className="brand">CV Analytics</span>?
+        </h2>
+
+        <div className="benefits__grid">
+            <p className="benefits__text">
+            A diferencia de otras herramientas, nuestro sistema no solo compara tu CV,
+            sino que lo optimiza para los trabajos más adecuados
+            </p>
+
+            {/* Reemplaza benefit.png por tu ilustración */}
+            <div className="benefits__image">
+            <Image
+                src="/assets/benefit.png"
+                alt="Optimización de CV"
+                width={420}
+                height={420}
+            />
+                </div>
         </div>
-    </section>
+        </section>
+
 
       {/* CLIENTES FELICES */}
         <section className="section happy">
