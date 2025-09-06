@@ -140,7 +140,12 @@ border: 1px solid rgba(0,0,0,.05);
 .time__sep { font-weight: 800; font-size: 28px; color: #2a3240; opacity: .6; }
 
 /* ====== Beneficios ====== */
-.benefits h2 { text-align: center; margin: 0 0 28px; }
+.benefits h2 {
+text-align: center;
+margin: 0 0 28px;
+font-size: 3rem;
+}
+
 .benefits__grid {
 display: grid;
 grid-template-columns: 1fr 420px;
@@ -149,13 +154,18 @@ gap: 32px;
 max-width: 1100px;
 margin: 0 auto;
 }
+
 .benefits__text {
-font-size: clamp(16px, 2.2vw, 20px);
-max-width: 640px;
-margin: 0 auto;
-line-height: 1.5;
+font-size: clamp(30px, 2.2vw, 20px);
+line-height: 1.6;
+max-width: 600px;
+text-align: left;
+margin: 0;
 }
-.benefits__image { justify-self: center; }
+
+.benefits__image {
+justify-self: center;
+}
 
 
 /* ====== Clientes felices ====== */
