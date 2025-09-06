@@ -14,26 +14,27 @@ return (
     </header>
 
     {/* HERO */}
-    <section>
-        <div className="hero">
-        <div>
-            <h1>Optimiza tu CV con nuestra tecnología de análisis inteligente</h1>
-            <p>
-            Conoce cómo tu CV se alinea con los requisitos de las mejores
-            empresas y mejora tu empleabilidad
-            </p>
-        </div>
-        <Image src="/assets/hero.png" alt="Hero" width={500} height={300} />
-        </div>
-        <button>Analiza tu CV ahora</button>
-    </section>
+<section className="hero-section">
+<div className="hero">
+    <div className="hero-text">
+    <h1>Optimiza tu CV con nuestra tecnología de análisis inteligente</h1>
+    <p>
+        Conoce cómo tu CV se alinea con los requisitos de las mejores
+        empresas y mejora tu empleabilidad
+    </p>
+    <button>Analiza tu CV ahora</button>
+    </div>
 
-      {/* SLOGAN */}
-    <section>
-        <h2>
-        “Haz que tu experiencia hable el idioma de las empresas”
-        </h2>
-    </section>
+    <Image src="/assets/hero.png" alt="Hero" width={500} height={300} />
+</div>
+</section>
+
+{/* SLOGAN */}
+<section className="slogan-section">
+<p>
+    “Haz que tu experiencia hable el idioma de las empresas”
+</p>
+</section>
 
       {/* TIMER (estático) */}
         <section className="section timer">
