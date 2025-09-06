@@ -1,0 +1,137 @@
+/* Fondo degradado constante */
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: linear-gradient(to bottom, #62a7e1, #ffffff);
+background-attachment: fixed;
+}
+
+/* Header */
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
+background: white;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+position: relative; /* 👈 ya no es fixed */
+z-index: 1000;
+}
+
+header img {
+height: 40px;
+}
+
+/* Links header */
+nav a {
+margin-left: 20px;
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+/* Secciones */
+section {
+padding: 100px 50px;
+text-align: center;
+}
+
+/* Texto + Imagen (intro) */
+.hero {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: auto;
+flex-wrap: wrap;
+gap: 40px;
+}
+
+.hero img {
+max-width: 500px;
+width: 100%;
+height: auto;
+}
+
+/* Botón */
+button {
+padding: 12px 24px;
+border: none;
+border-radius: 10px;
+background-color: #f0f4ff;
+box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+cursor: pointer;
+font-size: 16px;
+}
+
+button:hover {
+background-color: #dce7ff;
+}
+
+/* Contacto */
+form {
+max-width: 600px;
+margin: auto;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+input, textarea {
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 16px;
+}
+
+textarea {
+min-height: 120px;
+resize: vertical;
+}
+
+button[type="submit"] {
+background: #cddfff;
+font-weight: bold;
+}
+
+/* ====== Clientes felices ====== */
+.happy { text-align: center; }
+.happy__card {
+max-width: 980px;
+margin: 18px auto 0;
+padding: 28px;
+border-radius: 20px;
+background: linear-gradient(135deg, #66d0c8 0%, #68b6f0 100%);
+color: #0b1b2a;
+box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+.happy__title { font-size: clamp(18px, 2.2vw, 24px); margin: 0; color: #ffffff; }
+.happy__rating {
+margin-top: 10px;
+display: inline-flex; align-items: center; gap: 10px;
+background: rgba(255,255,255,.2);
+padding: 8px 12px; border-radius: 999px;
+}
+.happy__ratingText { font-size: 12px; color: #fff; opacity: .95; }
+.happy__reviews {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 16px;
+margin-top: 18px;
+}
+.review {
+background: rgba(255,255,255,.85);
+border: 1px solid rgba(255,255,255,.5);
+border-radius: 16px;
+padding: 16px;
+display: grid;
+grid-template-columns: 56px 1fr;
+align-items: center;
+gap: 12px;
+}
+.review__avatar { border-radius: 999px; }
+.review__text { margin: 0; font-weight: 600; color: #0f2233; }
