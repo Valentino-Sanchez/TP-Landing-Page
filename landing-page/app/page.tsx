@@ -32,7 +32,7 @@ return (
 {/* SLOGAN */}
 <section className="slogan-section">
 <p>
-    “Haz que tu experiencia hable el idioma de las empresas”
+“Donde tus habilidades encuentran su lugar”
 </p>
 </section>
 
