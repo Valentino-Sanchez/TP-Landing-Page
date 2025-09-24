@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Timer from "./components/Timer";
 
 export default function Home() {
 return (
@@ -36,31 +37,13 @@ return (
 </p>
 </section>
 
-      {/* TIMER (estático) */}
-        <section className="section timer">
-        <h2 className="timer__title">Apertura de la app</h2>
-        <div className="timer__row">
-            <div className="time">
-            <div className="time__num">14</div>
-            <div className="time__label">Días</div>
-            </div>
-            <span className="time__sep">:</span>
-            <div className="time">
-            <div className="time__num">26</div>
-            <div className="time__label">Horas</div>
-            </div>
-            <span className="time__sep">:</span>
-            <div className="time">
-            <div className="time__num">06</div>
-            <div className="time__label">Minutos</div>
-            </div>
-            <span className="time__sep">:</span>
-            <div className="time">
-            <div className="time__num">11</div>
-            <div className="time__label">Segundos</div>
-            </div>
-        </div>
-        </section>
+      {/* TIMER (countdown) */}
+    <main>
+      {/* otras secciones de tu landing */}
+    <Timer />
+      {/* más secciones */}
+    </main>
+
 
         {/* BENEFICIOS / ¿POR QUÉ ELEGIR? */}
         <section className="section benefits">
