@@ -2,8 +2,9 @@
 body {
 margin: 0;
 font-family: Arial, sans-serif;
-background: linear-gradient(to bottom, #62a7e1, #ffffff);
-background-attachment: fixed;
+background: #1563B1;
+background: linear-gradient(180deg,rgba(21, 99, 177, 1) 0%, rgba(186, 219, 253, 1) 27%, rgba(233, 239, 245, 1) 50%, rgba(255, 255, 255, 1) 100%);
+background-attachment:local;
 }
 
 /* Header */
