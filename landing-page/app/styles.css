@@ -1,3 +1,9 @@
+html {
+scroll-behavior: smooth;
+}
+
+
+
 /* Fondo degradado constante */
 body {
 margin: 0;
