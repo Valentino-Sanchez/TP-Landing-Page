@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Timer from "./components/Timer";
 import Slogan from "./components/Slogan";
+import Benefits from "./components/Benefits";
 
 export default function Home() {
 return (
@@ -46,35 +47,19 @@ return (
 
 
  {/* SLOGAN */}
-<Slogan />
+<section id="slogan">
+    <Slogan />
+    </section>
 
     {/* TIMER (countdown) */}
     <section id="timer">
         <Timer />
     </section>
 
-    {/* BENEFICIOS / ¿POR QUÉ ELEGIR? */}
-    <section id="benefits" className="section benefits">
-        <h2>
-        ¿Por qué elegir <span className="brand">CV Analytics</span>?
-        </h2>
-
-        <div className="benefits__grid">
-        <p className="benefits__text">
-            A diferencia de otras herramientas, nuestro sistema no solo compara
-            tu CV, sino que lo optimiza para los trabajos más adecuados
-        </p>
-
-        <div className="benefits__image">
-            <Image
-            src="/assets/benefit.png"
-            alt="Optimización de CV"
-            width={420}
-            height={420}
-            />
-        </div>
-        </div>
-    </section>
+{/* BENEFICIOS / ¿POR QUÉ ELEGIR? */} 
+<section id="benefits">
+<Benefits />
+</section>
 
     {/* CLIENTES FELICES */}
     <section className="section happy">
