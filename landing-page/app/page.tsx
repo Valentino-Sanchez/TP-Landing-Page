@@ -19,21 +19,30 @@ return (
         </nav>
     </header>
 
-    {/* HERO */}
-    <section id="hero" className="hero-section">
-        <div className="hero">
-        <div className="hero-text">
-            <h1>Optimiza tu CV con nuestra tecnología de análisis inteligente</h1>
-            <p>
-            Conoce cómo tu CV se alinea con los requisitos de las mejores
-            empresas y mejora tu empleabilidad
-            </p>
-            <button>Analiza tu CV ahora</button>
-        </div>
+{/* HERO */}
+<section id="hero" className="hero-section">
+<div className="hero">
+    <div className="hero-text">
+    <h1>Optimiza tu CV con nuestra tecnología de análisis inteligente</h1>
+    <p>
+        Conoce cómo tu CV se alinea con los requisitos de las mejores
+        empresas y mejora tu empleabilidad
+    </p>
+    <a
+        href="https://cv-analytics-webpage.onrender.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hero-btn"
+>
+        Analiza tu CV ahora
+</a>
+    </div>
 
-        <Image src="/assets/hero.png" alt="Hero" width={500} height={300} />
-        </div>
-    </section>
+    <Image src="/assets/hero.png" alt="Hero" width={500} height={300} />
+</div>
+</section>
+
+
 
     {/* SLOGAN */}
     <section className="slogan-section">

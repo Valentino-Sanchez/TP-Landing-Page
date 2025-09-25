@@ -88,7 +88,8 @@ height: auto;
 }
 
 /* Botón */
-button {
+.hero-btn {
+display: inline-block;
 padding: 14px 28px;
 border: none;
 border-radius: 12px;
@@ -97,10 +98,12 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 cursor: pointer;
 font-size: 16px;
 font-weight: bold;
+color: black;
+text-decoration: none;
 transition: background 0.3s;
 }
 
-button:hover {
+.hero-btn:hover {
 background-color: #dce7ff;
 }
 
