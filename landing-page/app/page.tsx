@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Timer from "./components/Timer";
+import Slogan from "./components/Slogan";
 
 export default function Home() {
 return (
@@ -44,10 +45,8 @@ return (
 
 
 
-    {/* SLOGAN */}
-    <section className="slogan-section">
-        <p>“Donde tus habilidades encuentran su lugar”</p>
-    </section>
+ {/* SLOGAN */}
+<Slogan />
 
     {/* TIMER (countdown) */}
     <section id="timer">
