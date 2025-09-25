@@ -238,28 +238,70 @@ gap: 12px;
 .review__avatar { border-radius: 999px; }
 .review__text { margin: 0; font-weight: 600; color: #0f2233; }
 
-/* Contacto */
-form {
-max-width: 600px;
-margin: auto;
-display: flex;
-flex-direction: column;
-gap: 15px;
+/* CONTACTO */
+.contact-section {
+margin: 60px auto;
+max-width: 800px;
 }
 
-input, textarea {
-padding: 12px;
-border: 1px solid #ccc;
-border-radius: 8px;
-font-size: 16px;
+.contact-section h2 {
+font-family: "Orbitron", sans-serif; /* tipografía estilo diseño */
+font-size: 3rem;
+margin-bottom: 30px;
+text-decoration: underline;
+text-align: center;
+}
+
+.contact-form {
+display: flex;
+position: relative; /* importante para el botón absoluto */
+max-width: 800px;
+margin: auto;
+}
+
+.form-fields {
+flex: 1; /* ocupa todo el ancho disponible */
+}
+
+.form-group {
+margin-bottom: 20px;
+font-size: 2rem;
+}
+
+label {
+display: block;
+font-family: "Orbitron", sans-serif;
+margin-bottom: 5px;
+}
+
+input,
+textarea {
+width: 100%;
+border: none;
+background: #ede8e8;
+padding: 10px;
+font-family: "Orbitron", sans-serif;
+font-size: 1rem;
 }
 
 textarea {
-min-height: 120px;
-resize: vertical;
+height: 200px;
+resize: none;
 }
 
-button[type="submit"] {
+/* Botón independiente, pegado al costado inferior derecho */
+.form-button {
+position: absolute;
+right: -300;
+bottom: 20;
+}
+
+button[type="button"] {
 background: #cddfff;
-font-weight: bold;
+padding: 10px 20px;
+border: none;
+border-radius: 8px;
+font-family: "Orbitron", sans-serif;
+font-size: 2rem;
+cursor: pointer;
 }

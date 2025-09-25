@@ -124,21 +124,28 @@ return (
     </section>
 
     {/* CONTACTO */}
-    <section>
-        <h2>Contáctanos</h2>
-        <form>
+<section className="contact-section">
+<h2>Contactanos</h2>
+<div className="contact-form">
+    <div className="form-fields">
+    <div className="form-group">
         <label>Nombre:</label>
-        <input type="text" placeholder="Escribe tu nombre" />
-
+        <input type="text" />
+    </div>
+    <div className="form-group">
         <label>Correo electrónico:</label>
-        <input type="email" placeholder="Escribe tu correo" />
-
+        <input type="email" />
+    </div>
+    <div className="form-group">
         <label>Mensaje:</label>
-        <textarea placeholder="Mensaje..."></textarea>
-
-        <button type="submit">Enviar</button>
-        </form>
-    </section>
-    </main>
+        <textarea></textarea>
+    </div>
+    </div>
+    <div className="form-button">
+    <button type="button">Enviar</button>
+    </div>
+</div>
+</section>
+</main>
 );
 }
