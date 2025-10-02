@@ -2,6 +2,8 @@ import Image from "next/image";
 import Timer from "./components/Timer";
 import Slogan from "./components/Slogan";
 import Benefits from "./components/Benefits";
+import Hero from "./components/Hero";
+import Clientes from "./components/Clientes";
 
 export default function Home() {
 return (
@@ -23,25 +25,7 @@ return (
 
 {/* HERO */}
 <section id="hero" className="hero-section">
-<div className="hero">
-    <div className="hero-text">
-    <h1>Optimiza tu CV con nuestra tecnología de análisis inteligente</h1>
-    <p>
-        Conoce cómo tu CV se alinea con los requisitos de las mejores
-        empresas y mejora tu empleabilidad
-    </p>
-    <a
-        href="https://cv-analytics-webpage.onrender.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hero-btn"
->
-        Analiza tu CV ahora
-</a>
-    </div>
-
-    <Image src="/assets/hero.png" alt="Hero" width={500} height={300} />
-</div>
+    <Hero />
 </section>
 
 
@@ -58,69 +42,12 @@ return (
 
 {/* BENEFICIOS / ¿POR QUÉ ELEGIR? */} 
 <section id="benefits">
-<Benefits />
+    <Benefits />
 </section>
 
     {/* CLIENTES FELICES */}
     <section className="section happy">
-        <h2>Clientes felices</h2>
-
-        <div className="happy__card">
-        <p className="happy__title">
-            Más de <b>5000 usuarios felices</b>
-        </p>
-
-        <div className="happy__rating">
-            <Image
-            src="/assets/stars.png"
-            alt="Calificación 5 estrellas"
-            width={160}
-            height={28}
-            />
-            <span className="happy__ratingText">
-            4.8/5 basado en +1000 reseñas
-            </span>
-        </div>
-
-        <div className="happy__reviews">
-            <div className="review">
-            <Image
-                src="/assets/user1.png"
-                alt="Usuario"
-                width={70}
-                height={100}
-                className="review__avatar"
-            />
-            <p className="review__text">
-                Conseguí entrevista más rápido gracias a la optimización
-            </p>
-            </div>
-
-            <div className="review">
-            <Image
-                src="/assets/user2.png"
-                alt="Usuario"
-                width={70}
-                height={100}
-                className="review__avatar"
-            />
-            <p className="review__text">
-                Me ayudó a resaltar mis puntos fuertes
-            </p>
-            </div>
-
-            <div className="review">
-            <Image
-                src="/assets/user3.png"
-                alt="Usuario"
-                width={70}
-                height={100}
-                className="review__avatar"
-            />
-            <p className="review__text">Mejoré mi CV en minutos</p>
-            </div>
-        </div>
-        </div>
+    <Clientes />
     </section>
 
     {/* CONTACTO */}
