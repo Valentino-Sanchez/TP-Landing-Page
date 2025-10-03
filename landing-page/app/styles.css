@@ -93,7 +93,7 @@ display: inline-block;
 padding: 25px 30px;
 border: none;
 border-radius: 12px;
-background-color: #f0f4ff;
+background-color: #05D933;
 box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 cursor: pointer;
 font-size: 16px;
@@ -297,7 +297,7 @@ bottom: 20;
 }
 
 button[type="button"] {
-background: #cddfff;
+background: #A0F3E9;
 padding: 10px 20px;
 border: none;
 border-radius: 8px;
